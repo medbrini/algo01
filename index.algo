@@ -1,0 +1,25 @@
+ALGORITHM read_a_sentence
+VAR
+nbr_ch,nbr_wrd,nbr_vwl:INTEGER:=0;
+ch,vwl,' ',:CHAR;
+wrd:STRING;
+
+BEGINgit
+read (ch)  
+WHILE (ch <> '.')   DO
+nbr_ch=nbr_ch+1;
+// determiner_le_nombre_de_character
+IF (ch = a,e,i,o,u)THEN
+ nbr_vwl= nbr_vwl+1
+    // determiner_le_nombre_de_vowelle
+END_IF
+IF (ch = ' ' and ch-1 <> ' ') THEN
+    then nbr_wrd = nbr_wrd + 1
+    // determiner_le_nombre_de_word
+END_IF 
+
+end_while
+
+whrite (nbr_ch,nbr_vwl,nbr_wrd)
+
+End
